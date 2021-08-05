@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Signup
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="container1">
+            <div class="box1">
+                <form id="signupform" action="/login">
+                    <label class="signuplabels" for="Username" id="label1">Username </label> <br>
+                    <input class="signupinputs" type="text" id="firstname" placeholder="Username">
+                    <label for="name" class="errors" id="nameerror"></label>
+                    <br>
+                    <label class="signuplabels"  for="Email">Email</label> <br>
+                    <input class="signupinputs" id="email" type="text"  placeholder="Email">
+                    <label for="emailerror" class="errors" id="emailerror"></label>
+                    <br>
+                    <label class="signuplabels"  for="password">Password</label> <br>
+                    <input class="signupinputs"   id="pwd" type="Password"  placeholder="Password">
+                    <label for="passworderror" class="errors" id="pwderror"></label> 
+                    <br>
+                    <label class="signuplabels"  for="repeat password">Repeat Password</label><br>
+                    <input class="signupinputs"  id="pwd2" type="password" placeholder="Repeat Password">
+                    <label for="repeaterror" class="errors" id="pwd2error"></label> 
+                    <br>
+                    <button type="submit" onclick="return validate()" id="signupbtn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+          <!--/stories-->
+          
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+                                                  
+                                                      
+    </div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+     <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+     <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- script references -->
+    <script>
+          let name=document.getElementById("firstname");
+          let nameerror=document.getElementById("nameerror");
+          let email=document.getElementById("email");
+          let emailerror=document.getElementById("emailerror");
+          var pwd=document.getElementById("pwd");
+          let pwderror=document.getElementById("pwderror");
+          var pwd2=document.getElementById("pwd2");
+          let pwd2error=document.getElementById("pwd2error");
+              function validate(){
+                  let regexp=/^([A-Za-z0-9\.\-])+\@([A-Za-z0-9\-])+\.([a-z]{2,3})(.[a-z]{2,3})?$/
+                  let strong=new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})");
+                   // let letters=/^[\w]+$/;
+                  //let strong = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+                  //let strong = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+                  //let medium = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+                  
+                  
+        
+                    if(name.value==""){
+                      nameerror.innerHTML="Username cannot be empty";
+                      name.style.border="2px solid red";
+                      
+                      if(name.value.trim()==""){
+                      nameerror.innerHTML="Username cannot be empty";
+                      name.style.border="2px solid red";
+                      return false;
+                    }
+                    }
+                    
+                    
+                    if(email.value==""){
+                      name.style.border="3px solid green";
+                      nameerror.innerHTML="";
+                      emailerror.innerHTML="Email cannot be empty";
+                        if(email.value.trim()==""){
+                          name.style.border="3px solid green";
+                          nameerror.innerHTML="";
+                          emailerror.innerHTML="Email cannot be empty";
+                          email.style.border="2px solid red";
+                          return false;
+                        }
+                    }
+                      if(regexp.test(email.value)==false){
+                        name.style.border="3px solid green";
+                        nameerror.innerHTML="";
+        
+                        emailerror.innerHTML="Invalid Email format";
+                        email.style.border="2px solid red";
+                        return false;
+                    
+                    }
+                  
+                    
+                  
+                    /*if (pwd.value.length == 0) {
+                      email.style.border="3px solid green";
+                      emailerror.innerHTML="";
+        
+                      pwderror.innerHTML = 'Type Password';
+                      pwderror.style.color="red";
+                      pwd.style.border="3px solid red";
+                      return false;
+                    } */
+                    
+                            
+                      if(pwd.value=="") {
+                        email.style.border="3px solid green";
+                        emailerror.innerHTML="";
+                    
+                        pwderror.innerHTML = 'Type Password';
+                        pwd.style.border="2px solid red";
+                          if(pwd.value.trim()=="") {
+                              email.style.border="3px solid green";
+                              emailerror.innerHTML="";
+                      
+                              pwderror.innerHTML = 'Type Password';
+                              pwd.style.border="2px solid red";
+                              return false;
+                            }
+                      } 
+                    if(strong.test(pwd.value)== false) {
+                        email.style.border="3px solid green";
+                        emailerror.innerHTML="";
+                
+                              /* pwderror.innerHTML = '<span style="color:orange">Medium!!! Try including special characters</span>';
+                                pwd.style.border="3px solid orange";
+                                return false;*/
+                        pwderror.innerHTML = 'Password is not strong.<br> Try adding numbers and special characters';
+                        pwd.style.border="2px solid red";  
+                        return false;
+                    } 
+                 
+                 
+                    else if(strong.test(pwd.value)) {
+                      email.style.border="3px solid green";
+                      emailerror.innerHTML="";
+        
+                        pwderror.innerHTML = '<span>Strong!</span>';
+                        pwd.style.border="3px solid green";
+                          if(pwd2.value=="") {
+                            pwd2error.innerHTML = 'Re-enter Password';
+                            pwd2.style.border="2px solid red";
+                            return false;
+                          } 
+                          else if(pwd2.value.trim()=="") {
+                            pwd2error.innerHTML = 'Re-enter Password';
+                            pwd2.style.border="2px solid red";
+                            return false;
+                     
+                          } 
+                    
+                           else if(pwd2.value!=pwd.value) {
+                            pwd2error.innerHTML = 'Passwords did not match';
+                            pwd2.style.border="3px solid red";
+                            return false;
+                           }
+                           else{
+                              pwd2error.innerHTML ="";
+                              pwd2.style.border="2px solid green";
+                              return true;
+                            } 
+                      }  
+                   
+                  }
+           </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>        
+  </body>
+</html>
+
